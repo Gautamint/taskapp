@@ -17,12 +17,12 @@
         <?php endforeach; ?>
     </ul>
 <?php endif ?>
-<?= form_open("/tasks/update/" . $task['id']) ?>
+<?= form_open("/tasks/update/" . $task->id) ?>
 
 <?=$this->include('Tasks/form') ?>
 
 <button type="submit">save</button>
-<a href="<?= site_url('/tasks/show/' . $task['id']); ?>">cancel</a>
+<a href="<?= site_url('/tasks/show/' . $task->id); ?>">cancel</a>
 </form>
 
  <?= $this->endSection(); ?>
